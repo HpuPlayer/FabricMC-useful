@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/firework_rocket",
+  "textures": {
+    "layer0": "useful:item/endless_firework"
+  }
+}
