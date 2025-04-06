@@ -7,12 +7,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.WorldChunk;
 
@@ -24,7 +20,6 @@ public class ItemChuckCLear extends Item {
 
     @Override
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
-        BlockPos blockPos = user.getBlockPos();
         if (!world.isClient){
             WorldChunk worldChunk = world.getWorldChunk(user.getBlockPos());
             ChunkPos pos = worldChunk.getPos();
