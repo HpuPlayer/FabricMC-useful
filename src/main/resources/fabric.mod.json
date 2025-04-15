@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"top.ioart.Useful"
+		],
+		"client": [
+			"top.ioart.client.ModInitClient"
 		]
 	},
 	"mixins": [

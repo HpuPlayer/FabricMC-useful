@@ -40,8 +40,7 @@ public class ItemMagicStick extends Item {
             Optional<Vec3d> hitResult = entityBox.raycast(start, end);
             if (hitResult.isPresent()){
                 user.sendMessage(Text.of("Found entity: " + entity.getType()),true);
-                entity.setVelocity(user.getRotationVec(2.0F));
-                //user.startRiding(entity);
+                entity.setVelocity(0,3,0);
             }
         }
         return super.use(world, user, hand);
