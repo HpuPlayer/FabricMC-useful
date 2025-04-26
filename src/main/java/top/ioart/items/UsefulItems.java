@@ -22,6 +22,7 @@ public class UsefulItems {
     public static final Item TRAVEL_STICK = register("travel_stick", ItemTravelStick::new,new Item.Settings());
     public static final Item MAGIC_STICK = register("magic_stick", ItemMagicStick::new,new Item.Settings());
     public static final Item FLYING_SWORD = register("flying_sword", ItemFlyingSword::new,new Item.Settings());
+    public static final Item IDEA_TEST = register("idea_test", ItemIdeaTest::new,new Item.Settings());
 
     public static Item register(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("useful", path));
@@ -43,5 +44,7 @@ public class UsefulItems {
                 .register(group-> group.add(UsefulItems.MAGIC_STICK));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(group-> group.add(UsefulItems.FLYING_SWORD));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register(group-> group.add(UsefulItems.IDEA_TEST));
     }
 }

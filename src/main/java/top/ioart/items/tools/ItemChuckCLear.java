@@ -1,6 +1,7 @@
 package top.ioart.items.tools;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.client.render.entity.TridentEntityRenderer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.text.Text;
